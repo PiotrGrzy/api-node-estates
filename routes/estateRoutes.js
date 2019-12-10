@@ -1,12 +1,12 @@
 const express = require("express");
 const estateController = require("../controllers/estateController");
-const authCotroller = require("../controllers/authController");
+const authController = require("../controllers/authController");
 const router = express.Router();
 
 router
   .route("/")
   .get(estateController.getAllEstates)
-  .post(authCotroller.protect, estateController.createEstate); //only for logged in users
+  .post(authController.protect, estateController.createEstate); //only for logged in users
 
 router
   .route("/:id")
