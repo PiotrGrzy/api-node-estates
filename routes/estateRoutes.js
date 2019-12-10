@@ -1,17 +1,15 @@
-const express = require('express');
-const estateController = require('../controllers/estateController');
-const authCotroller = require('../controllers/authController');
+const express = require("express");
+const estateController = require("../controllers/estateController");
+const authCotroller = require("../controllers/authController");
 const router = express.Router();
 
-//router.param('id', estateController.checkID);
+router
+  .route("/")
+  .get(estateController.getAllEstates)
+  .post(authCotroller.protect, estateController.createEstate); //only for logged in users
 
 router
-  .route('/')
-  .get(authCotroller.protect, estateController.getAllEstates)
-  .post(estateController.createEstate);
-
-router
-  .route('/:id')
+  .route("/:id")
   .get(estateController.getEstate)
   .patch(estateController.updateEstate)
   .delete(estateController.deleteEstate);

@@ -1,17 +1,17 @@
-const express = require('express');
-const usersCotroller = require('../controllers/usersController');
-const authCotroller = require('../controllers/authController');
+const express = require("express");
+const usersCotroller = require("../controllers/usersController");
+const authCotroller = require("../controllers/authController");
 const router = express.Router();
 
-router.post('/signup', authCotroller.signup);
-router.post('/login', authCotroller.login);
+router.post("/signup", authCotroller.signup); // new users
+router.post("/login", authCotroller.login); // login
 
 router
-  .route('/')
+  .route("/")
   .get(usersCotroller.getAllUsers)
   .post(usersCotroller.createUser);
 router
-  .route('/:id')
+  .route("/:id")
   .get(usersCotroller.getUser)
   .patch(usersCotroller.updateUser)
   .delete(usersCotroller.deleteUser);
