@@ -43,9 +43,11 @@ exports.getEstate = async (req, res) => {
 exports.createEstate = async (req, res) => {
   try {
     console.log(req.file);
+    if (req.file) {
+      req.body.mainImage = req.file.filename;
+    }
     console.log(req.body);
     const newEstate = await Estate.create(req.body);
-    newEstate.mainImage = req.file.path;
     res.status(200).json({
       status: "success",
       data: {
