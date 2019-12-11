@@ -15,8 +15,8 @@ const estateSchema = new mongoose.Schema({
     type: String,
     required: [true, "The Estate must have a type chosen"],
     enum: {
-      values: ["flat", "house"],
-      message: "Type is either : flat or house"
+      values: ["mieszkanie", "dom", "pokój"],
+      message: "Type is either : mieszkanie, dom, pokój"
     }
   },
   area: {
@@ -43,6 +43,10 @@ const estateSchema = new mongoose.Schema({
   createdAt: {
     type: Date,
     default: new Date()
+  },
+  mainImage: {
+    type: String,
+    required: false
   }
 });
 
