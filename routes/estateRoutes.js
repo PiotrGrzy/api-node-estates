@@ -42,7 +42,11 @@ router
 router
   .route("/:id")
   .get(estateController.getEstate)
-  .patch(estateController.updateEstate)
-  .delete(estateController.deleteEstate);
+  .patch(
+    authController.protect,
+    upload.single("photo"),
+    estateController.updateEstate
+  )
+  .delete(authController.protect, estateController.deleteEstate);
 
 module.exports = router;
