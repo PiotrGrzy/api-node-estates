@@ -1,0 +1,1 @@
+var searchSelect = new Selectal('#search__select');

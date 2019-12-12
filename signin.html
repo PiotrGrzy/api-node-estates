@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tytuł</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap&subset=latin-ext">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/signin.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <a class="header__home-link" href="./index.html">
+                <img class="header__logo" src="./assets/img/logo.svg">
+            </a>
+            <a class="header__signup-link" href="./signup.html">
+                <button class="header__btn tbs1" type="button">Stwórz konto</button>
+            </a>
+        </div>
+    </header>
+    <div class="sign-in">
+        <form class="sign-in__form" autocomplete="off">
+            <span class="sign-in__title tbl1">Zaloguj się&nbsp;i dodawaj ogłoszenia</span>
+            <div class="sign-in__username">
+                <label class="sign-in__label tbs2" for="username">Nazwa użytkownika</label>
+                <input id="username" class="sign-in__username-input" type="text" name="username"
+                    placeholder="Wpisz nazwę użytkownika...">
+            </div>
+            <div class="sign-in__password">
+                <label class="sign-in__label tbs2" for="password">Hasło</label>
+                <input id="password" class="sign-in__password-input" type="password" name="password"
+                    placeholder="Wpisz hasło...">
+            </div>
+            <button class="sign-in__btn" type="button">Zaloguj</button>
+            <span class="sign-in__text trs2">Nie masz jeszcze konta?</span>
+            <a class="sign-in__link tbs2" href="./signup.html">Stwórz je!</a>
+        </form>
+    </div>
+</body>
+
+</html>

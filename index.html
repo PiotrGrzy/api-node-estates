@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tytuł</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap&subset=latin-ext">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/pretty-checkbox.css">
+    <link rel="stylesheet" href="./node_modules/selectal/dist/selectal.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./node_modules/selectal/dist/selectal.min.js" defer></script>
+    <script src="./assets/js/index.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <a class="header__home-link" href="./index.html">
+                <img class="header__logo" src="./assets/img/logo.svg">
+            </a>
+            <a class="header__signin-link" href="./signin.html">
+                <button class="header__btn tbs1" type="button">Zaloguj się</button>
+            </a>
+        </div>
+    </header>
+    <form class="search" autocomplete="off">
+        <div class="search__title">
+            <label class="search__label tbs2" for="title">Nazwa</label>
+            <input id="title" class="search__title-input tbs1" name="title" type="text" autocomplete="off"
+                placeholder="Wpisz szukaną nazwę...">
+        </div>
+        <div class="search__city">
+            <label class="search__label tbs2" for="place">Miasto</label>
+            <input id="place" class="search__city-input tbs1" name="place" type="text" autocomplete="off"
+                placeholder="Wpisz miasto...">
+        </div>
+        <div class="search__type">
+            <span class="search__label tbs2">Rodzaj nieruchomości</span>
+            <div class="search__type-inputs">
+                <div class="pretty p-default p-curve p-thick p-smooth">
+                    <input type="checkbox" />
+                    <div class="state trs1">
+                        <label class="search__type-label">Dom</label>
+                    </div>
+                </div>
+                <div class="pretty p-default p-curve p-thick p-smooth">
+                    <input type="checkbox" />
+                    <div class="state trs1">
+                        <label class="search__type-label">Mieszkanie</label>
+                    </div>
+                </div>
+                <div class="pretty p-default p-curve p-thick p-smooth">
+                    <input type="checkbox" />
+                    <div class="state trs1">
+                        <label class="search__type-label">Pokój</label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="search__price">
+            <span class="search__label tbs2">Cena</span>
+            <div class="search__price-inputs">
+                <input id="min-price" class="search__price-input tbs1" name="min-price" type="text" size="10"
+                    autocomplete="off" placeholder="Od...">
+                <input id="max-price" class="search__price-input tbs1" name="max-price" type="text" size="10"
+                    autocomplete="off" placeholder="Do...">
+            </div>
+        </div>
+        <div class="search__area">
+            <span class="search__label tbs2">Powierzchnia</span>
+            <div class="search__area-inputs">
+                <input id="min-area" class="search__area-input tbs1" name="min-area" type="text" size="10"
+                    autocomplete="off" placeholder="Od...">
+                <input id="max-area" class="search__area-input tbs1" name="max-area" type="text" size="10"
+                    autocomplete="off" placeholder="Do...">
+            </div>
+        </div>
+        <div class="search__rooms">
+            <span class="search__label tbs2">Pokoje</span>
+            <div class="search__rooms-inputs">
+                <input id="min-rooms" class="search__rooms-input tbs1" name="min-rooms" type="text" size="5"
+                    autocomplete="off" placeholder="Od...">
+                <input id="max-rooms" class="search__rooms-input tbs1" name="max-rooms" type="text" size="5"
+                    autocomplete="off" placeholder="Do...">
+            </div>
+        </div>
+        <div class="search__additional">
+            <span class="search__label tbs2">Ogłoszenie musi zawierać</span>
+            <div class="search__additional-inputs">
+                <div class="pretty p-default p-curve p-thick p-smooth">
+                    <input type="checkbox" />
+                    <div class="state trs1">
+                        <label class="search__additional-label">Opis</label>
+                    </div>
+                </div>
+                <div class="pretty p-default p-curve p-thick p-smooth">
+                    <input type="checkbox" />
+                    <div class="state trs1">
+                        <label class="search__additional-label">Zdjęcia</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search__sort">
+            <span class="search__label tbs2">Sortowanie</span>
+            <select id="search__select">
+                <option value="sort1">Sortowanie1</option>
+                <option value="sort2">Sortowanie2</option>
+                <option value="sort3">Sortowanie3</option>
+                <option value="sort4">Sortowanie4</option>
+            </select>
+        </div>
+        <div class="search__button">
+            <button class="search__btn tbs1" type="button">Szukaj</button>
+        </div>
+    </form>
+    <ul class="results__list">
+        <li class="results__item">
+            <div class="results__img">
+                <img src="https://via.placeholder.com/200">
+            </div>
+            <div class="results__info">
+                <div class="results__info-title">
+                    <span class="results__title tb">Mieszkanie nad morzem, nowoczesne i przestronne</span>
+                    <span class="resulst__place tr">Gdynia</span>
+                </div>
+                <div class="results__info-main tbs1">
+                    <div class="results__area">
+                        <span class="results__area-key">Powierzchnia:</span>
+                        <span class="results__area-value trs1">90m<sup>2</sup></span>
+                    </div>
+                    <div class="results__rooms">
+                        <span class="results__rooms-key">Pokoje:</span>
+                        <span class="results__rooms-value trs1">4</span>
+                    </div>
+                    <div class="results__date">
+                        <span class="results__date-key">Data dodania ogłoszenia:</span>
+                        <span class="results__date-value trs1">01-12-2019</span>
+                    </div>
+                </div>
+            </div>
+            <div class="results__price">
+                <span class="results__price-value tbl1">3000 zł</span>
+            </div>
+        </li>
+        <li class="results__item">
+            <div class="results__img">
+                <img src="https://via.placeholder.com/200">
+            </div>
+            <div class="results__info">
+                <div class="results__info-title">
+                    <span class="results__title tb">Mieszkanie nad morzem, nowoczesne i przestronne</span>
+                    <span class="resulst__place tr">Gdynia</span>
+                </div>
+                <div class="results__info-main tbs1">
+                    <div class="results__area">
+                        <span class="results__area-key">Powierzchnia:</span>
+                        <span class="results__area-value trs1">90m<sup>2</sup></span>
+                    </div>
+                    <div class="results__rooms">
+                        <span class="results__rooms-key">Pokoje:</span>
+                        <span class="results__rooms-value trs1">4</span>
+                    </div>
+                    <div class="results__date">
+                        <span class="results__date-key">Data dodania ogłoszenia:</span>
+                        <span class="results__date-value trs1">01-12-2019</span>
+                    </div>
+                </div>
+            </div>
+            <div class="results__price">
+                <span class="results__price-value tbl1">3000 zł</span>
+            </div>
+        </li>
+        <li class="results__item">
+            <div class="results__img">
+                <img src="https://via.placeholder.com/200">
+            </div>
+            <div class="results__info">
+                <div class="results__info-title">
+                    <span class="results__title tb">Mieszkanie nad morzem, nowoczesne i przestronne</span>
+                    <span class="resulst__place tr">Gdynia</span>
+                </div>
+                <div class="results__info-main tbs1">
+                    <div class="results__area">
+                        <span class="results__area-key">Powierzchnia:</span>
+                        <span class="results__area-value trs1">90m<sup>2</sup></span>
+                    </div>
+                    <div class="results__rooms">
+                        <span class="results__rooms-key">Pokoje:</span>
+                        <span class="results__rooms-value trs1">4</span>
+                    </div>
+                    <div class="results__date">
+                        <span class="results__date-key">Data dodania ogłoszenia:</span>
+                        <span class="results__date-value trs1">01-12-2019</span>
+                    </div>
+                </div>
+            </div>
+            <div class="results__price">
+                <span class="results__price-value tbl1">3000 zł</span>
+            </div>
+        </li>
+    </ul>
+</body>
+
+</html>

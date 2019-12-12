@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tytuł</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap&subset=latin-ext">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/signup.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <a class="header__home-link" href="./index.html">
+                <img class="header__logo" src="./assets/img/logo.svg">
+            </a>
+            <a class="header__signin-link" href="./signin.html">
+                <button class="header__btn tbs1" type="button">Zaloguj się</button>
+            </a>
+        </div>
+    </header>
+    <div class="sign-up">
+        <form class="sign-up__form" autocomplete="off">
+            <span class="sign-up__title tbl1">Stwórz nowe konto</span>
+            <div class="sign-up__username">
+                <label class="sign-up__label tbs2" for="username">Nazwa użytkownika</label>
+                <input id="username" class="sign-up__username-input" type="text" name="username"
+                    placeholder="Wpisz nazwę użytkownika...">
+            </div>
+            <div class="sign-up__email">
+                <label class="sign-up__label tbs2" for="email">E-mail</label>
+                <input id="email" class="sign-up__email-input" type="email" name="email"
+                    placeholder="Wpisz adres e-mail...">
+            </div>
+            <div class="sign-up__password">
+                <label class="sign-up__label tbs2" for="password">Hasło</label>
+                <input id="password" class="sign-up__password-input" type="password" name="password"
+                    placeholder="Wpisz hasło...">
+            </div>
+            <div class="sign-up__password">
+                <label class="sign-up__label tbs2" for="password-repeat">Powtórz hasło</label>
+                <input id="password-repeat" class="sign-up__password-input" type="password" name="password"
+                    placeholder="Powtórz hasło...">
+            </div>
+            <button class="sign-up__btn" type="button">Zaloguj</button>
+            <span class="sign-up__text trs2">Nie masz jeszcze konta?</span>
+            <a class="sign-up__link tbs2" href="#">Stwórz je!</a>
+        </form>
+    </div>
+</body>
+
+</html>

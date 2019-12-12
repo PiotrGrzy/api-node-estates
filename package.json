@@ -1,16 +1,16 @@
 {
-  "name": "real-estate-api",
+  "name": "hireApp",
   "version": "1.0.0",
-  "description": "API for real estates offers",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "start:dev": "nodemon server.js",
-    "start:prod": "NODE_ENV=production nodemon server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Piotr Grzymowicz, Paulina Buczkowska, Mariusz Porysiak",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< Updated upstream
     "bcryptjs": "^2.4.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
@@ -21,5 +21,9 @@
   },
   "engines": {
     "node": ">=10.0.0"
+=======
+    "pretty-checkbox": "^3.0.3",
+    "selectal": "^1.4.2"
+>>>>>>> Stashed changes
   }
 }

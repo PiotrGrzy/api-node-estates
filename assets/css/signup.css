@@ -1,0 +1,426 @@
+/* Color Theme Swatches in Hex */
+/* Font */
+/* Other */
+/*
+t - typography
+r - regular
+b - bold
+l - larger
+s - smaller
+*/
+.tr {
+  font-weight: 400;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+}
+
+.trs1 {
+  font-weight: 400;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-size: 0.875rem;
+}
+
+.trs2 {
+  font-weight: 400;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-size: 0.75rem;
+}
+
+.tbl1 {
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 0.05rem;
+  font-size: 1rem;
+  font-size: 1.25rem;
+}
+
+.tb {
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 0.05rem;
+  font-size: 1rem;
+}
+
+.tbs1 {
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 0.05rem;
+  font-size: 1rem;
+  font-size: 0.875rem;
+}
+
+.tbs2 {
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 0.05rem;
+  font-size: 1rem;
+  font-size: 0.75rem;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.header {
+  background-color: #5C88BD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70vw;
+  padding: 1rem;
+}
+
+.header__logo {
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.header__logo:hover {
+  -webkit-transform: scale(0.75) rotateY(180deg);
+          transform: scale(0.75) rotateY(180deg);
+}
+
+.header__btn {
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: unset;
+  color: white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0.75rem;
+  -webkit-transition: -webkit-transform 0.1s;
+  transition: -webkit-transform 0.1s;
+  transition: transform 0.1s;
+  transition: transform 0.1s, -webkit-transform 0.1s;
+  cursor: pointer;
+}
+
+.header__btn:hover {
+  border-color: #F0968D;
+}
+
+.sign-up {
+  width: 70vw;
+  margin: 0 auto;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F0968D;
+}
+
+.sign-up__form {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  color: white;
+}
+
+.sign-up__title {
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.sign-up__label {
+  color: white;
+  padding-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  text-align: left;
+}
+
+.sign-up__username {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding-bottom: 1rem;
+}
+
+.sign-up__username-input {
+  padding: 0.5rem;
+  border: 2px solid #F0968D;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 0px 2px white;
+          box-shadow: 0px 0px 0px 2px white;
+  color: #F0968D;
+  margin: 0 0.5rem;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+}
+
+.sign-up__username-input:hover {
+  border-color: #5C88BD;
+}
+
+.sign-up__username-input:focus {
+  outline: none;
+}
+
+.sign-up__username-input::-webkit-input-placeholder {
+  color: #F0968D;
+  opacity: 1;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.sign-up__username-input:-ms-input-placeholder {
+  color: #F0968D;
+  opacity: 1;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.sign-up__username-input::-ms-input-placeholder {
+  color: #F0968D;
+  opacity: 1;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.sign-up__username-input::placeholder {
+  color: #F0968D;
+  opacity: 1;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.sign-up__email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding-bottom: 1rem;
+}
+
+.sign-up__email-input {
+  padding: 0.5rem;
+  border: 2px solid #F0968D;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 0px 2px white;
+          box-shadow: 0px 0px 0px 2px white;
+  color: #F0968D;
+  margin: 0 0.5rem;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+}
+
+.sign-up__email-input:hover {
+  border-color: #5C88BD;
+}
+
+.sign-up__email-input:focus {
+  outline: none;
+}
+
+.sign-up__email-input::-webkit-input-placeholder {
+  color: #F0968D;
+  opacity: 1;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.sign-up__email-input:-ms-input-placeholder {
+  color: #F0968D;
+  opacity: 1;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.sign-up__email-input::-ms-input-placeholder {
+  color: #F0968D;
+  opacity: 1;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.sign-up__email-input::placeholder {
+  color: #F0968D;
+  opacity: 1;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.sign-up__password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding-bottom: 2rem;
+}
+
+.sign-up__password-input {
+  padding: 0.5rem;
+  border: 2px solid #F0968D;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 0px 2px white;
+          box-shadow: 0px 0px 0px 2px white;
+  color: #F0968D;
+  margin: 0 0.5rem;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+}
+
+.sign-up__password-input:hover {
+  border-color: #5C88BD;
+}
+
+.sign-up__password-input:focus {
+  outline: none;
+}
+
+.sign-up__password-input::-webkit-input-placeholder {
+  color: #F0968D;
+  opacity: 1;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.sign-up__password-input:-ms-input-placeholder {
+  color: #F0968D;
+  opacity: 1;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.sign-up__password-input::-ms-input-placeholder {
+  color: #F0968D;
+  opacity: 1;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.sign-up__password-input::placeholder {
+  color: #F0968D;
+  opacity: 1;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.sign-up__link {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+
+.sign-up__link:hover {
+  color: #587AA3;
+}
+
+.sign-up__btn {
+  padding: 0.5rem;
+  border: 2px solid #F0968D;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 0px 2px white;
+          box-shadow: 0px 0px 0px 2px white;
+  color: #F0968D;
+  margin: 0 0.5rem;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+  background-color: #F0968D;
+  color: white;
+  margin-bottom: 2rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.sign-up__btn:hover {
+  border-color: #5C88BD;
+}
+
+.sign-up__btn:focus {
+  outline: none;
+}
+
+.sign-up__btn::-webkit-input-placeholder {
+  color: #F0968D;
+  opacity: 1;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.sign-up__btn:-ms-input-placeholder {
+  color: #F0968D;
+  opacity: 1;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.sign-up__btn::-ms-input-placeholder {
+  color: #F0968D;
+  opacity: 1;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.sign-up__btn::placeholder {
+  color: #F0968D;
+  opacity: 1;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.sign-up__btn:hover {
+  background-color: #5C88BD;
+  border-color: #5C88BD;
+  color: white;
+}
+/*# sourceMappingURL=signup.css.map */
