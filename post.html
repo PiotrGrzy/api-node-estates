@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tytuł</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap&subset=latin-ext">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/pretty-checkbox.css">
+    <link rel="stylesheet" href="./assets/css/post.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <a class="header__home-link" href="#">
+                <img class="header__logo" src="./assets/img/logo.svg">
+            </a>
+        </div>
+    </header>
+    <form class="post" autocomplete="off">
+        <div class="post__info">
+            <div class="post__title">
+                <label class="post__label tbs2" for="title">Nazwa</label>
+                <input id="title" class="post__title-input tbs1" name="title" type="text" autocomplete="off"
+                    placeholder="Wpisz nazwę ogłoszenia...">
+            </div>
+            <div class="post__city">
+                <label class="post__label tbs2" for="place">Miasto</label>
+                <input id="place" class="post__city-input tbs1" name="place" type="text" autocomplete="off"
+                    placeholder="Wpisz miasto...">
+            </div>
+            <div class="post__type">
+                <span class="post__label tbs2">Rodzaj nieruchomości</span>
+                <div class="post__type-inputs">
+                    <div class="post__type-input pretty p-default p-round p-thick p-smooth">
+                        <input type="radio" name="radio">
+                        <div class="state trs1">
+                            <label class="post__type-label">Dom</label>
+                        </div>
+                    </div>
+                    <div class="post__type-input pretty p-default p-round p-thick p-smooth">
+                        <input type="radio" name="radio">
+                        <div class="state trs1">
+                            <label class="post__type-label">Mieszkanie</label>
+                        </div>
+                    </div>
+                    <div class="post__type-input pretty p-default p-round p-thick p-smooth">
+                        <input type="radio" name="radio">
+                        <div class="state trs1">
+                            <label class="post__type-label">Pokój</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="post__price">
+                <span class="post__label tbs2">Cena</span>
+                <input id="min-price" class="post__price-input tbs1" name="min-price" type="text" size="10"
+                    autocomplete="off" placeholder="">
+            </div>
+            <div class="post__area">
+                <span class="post__label tbs2">Powierzchnia</span>
+                <input id="min-area" class="post__area-input tbs1" name="min-area" type="text" size="10"
+                    autocomplete="off" placeholder="">
+            </div>
+            <div class="post__rooms">
+                <span class="post__label tbs2">Pokoje</span>
+                <input id="min-rooms" class="post__rooms-input tbs1" name="min-rooms" type="text" size="5"
+                    autocomplete="off" placeholder=".">
+            </div>
+        </div>
+        <!-- <div class="post__description">
+            <textarea rows="19" cols="50"></textarea>
+        </div> -->
+        <!-- <div class="post__photos"></div> -->
+        <div class="post__button">
+            <button class="post__btn tbs1" type="button">Dodaj</button>
+        </div>
+    </form>
+</body>
+
+</html>

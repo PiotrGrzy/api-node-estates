@@ -296,6 +296,7 @@ html {
   -webkit-transition: border-color 0.2s;
   transition: border-color 0.2s;
   padding: 0.55rem;
+  padding-right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
