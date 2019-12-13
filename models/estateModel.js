@@ -44,6 +44,10 @@ const estateSchema = new mongoose.Schema({
     type: Date,
     default: new Date()
   },
+  contact: {
+    type: String,
+    required: true
+  },
   mainImage: {
     type: String,
     required: false

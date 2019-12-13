@@ -37,7 +37,7 @@ router
     authController.protect,
     upload.single("photo"),
     estateController.createEstate
-  ); //only for logged in users
+  );
 
 router
   .route("/:id")
