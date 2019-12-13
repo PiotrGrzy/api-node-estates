@@ -51,6 +51,14 @@ const estateSchema = new mongoose.Schema({
   mainImage: {
     type: String,
     required: false
+  },
+  userName: {
+    type: String,
+    required: true
+  },
+  userID: {
+    type: String,
+    required: true
   }
 });
 
